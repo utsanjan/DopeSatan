@@ -5,6 +5,6 @@ This Repository is entirely used to store my Blog Page's (Dope Satan) assets.
 
 # Social Handles
 In case you want to find me in other platforms:
-🔸 [Youtube](https://www.youtube.com/dopesatan)
-🔸 [Instagram](https://www.instagram.com/utsanjan)
-🔸 [LinkedIn](https://www.linkedin.com/in/utsanjan)
+<br/>🔸 [Youtube](https://www.youtube.com/dopesatan)
+<br/>🔸 [Instagram](https://www.instagram.com/utsanjan)
+<br/>🔸 [LinkedIn](https://www.linkedin.com/in/utsanjan)
