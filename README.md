@@ -8,3 +8,4 @@ In case you want to find me in other platforms:
 <br/>🔸 [Youtube](https://www.youtube.com/dopesatan)
 <br/>🔸 [Instagram](https://www.instagram.com/utsanjan)
 <br/>🔸 [LinkedIn](https://www.linkedin.com/in/utsanjan)
+<br/>🔸 [Facebook](https://www.facebook.com/utsanjan)
