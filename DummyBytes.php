@@ -8,6 +8,6 @@
         @readfile($file);
     }
     else{
-        header('Location: https://cutt.ly/dopesatan');
+        header('Location: https://www.utsanjan.ml');
     }
 ?>
