@@ -8,6 +8,6 @@
         @readfile($file);
     }
     else{
-        header('Location: https://www.utsanjan.ml');
+        header('Location: https://halterapp.com');
     }
 ?>
