@@ -348,9 +348,10 @@
         .popup {
             width: 60%;
             padding: 20px;
+            margin-top: 50%;
             margin: 70px auto;
-            position: relative;
             border-radius: 10px;
+            position: relative;
             background: #FDFEFF;
             z-index: 999999999999999;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
