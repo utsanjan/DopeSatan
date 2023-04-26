@@ -347,7 +347,7 @@
 
         .popup {
             width: 60%;
-            height: 500px;
+            height: 200px;
             padding: 20px;
             margin: 70px auto;
             border-radius: 10px;
@@ -367,5 +367,5 @@
         .popup .content {
             max-height: 30%;
             overflow: auto;
-            height: 500px;
+            height: 200px;
         }
