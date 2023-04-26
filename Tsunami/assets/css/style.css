@@ -347,6 +347,7 @@
 
         .popup {
             width: 60%;
+            height: 60%;
             padding: 20px;
             margin: 70px auto;
             border-radius: 10px;
