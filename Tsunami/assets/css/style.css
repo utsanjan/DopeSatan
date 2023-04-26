@@ -349,11 +349,10 @@
             width: 60%;
             height: 60%;
             padding: 20px;
-            margin: 70px auto;
-            border-radius: 10px;
             position: relative;
+            border-radius: 10px;
             background: #FDFEFF;
-            margin-top: 50%;
+            margin: 70px 0 70px 0;
             z-index: 999999999999999;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
