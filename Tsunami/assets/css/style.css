@@ -367,5 +367,5 @@
         .popup .content {
             max-height: 30%;
             overflow: auto;
-            height: 50%;
+            height: 500px;
         }
