@@ -78,9 +78,9 @@
         }
 
         footer {
-            width: 100%;
+            width: 110%;
             position: fixed;
-            bottom: 0px;
+            bottom: -5px;
             margin-left: -10px;
             z-index: 10000050;
         }
