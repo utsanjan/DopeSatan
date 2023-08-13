@@ -89,6 +89,7 @@ section .signin .content h2
   font-size: 2em;
   color: #19BC9B;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 section .signin .content .form 
 {
@@ -203,6 +204,7 @@ input[type="submit"]:active
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
+  font-weight: bolder;
 }
 .login-box .user-box
 {
