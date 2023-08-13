@@ -114,7 +114,7 @@ section .signin .content .form .inputBox input
   outline: none;
   padding: 25px 10px 7.5px;
   border-radius: 4px;
-  color: #fff;
+  color: #fefefe;
   font-weight: 500;
   font-size: 1em;
 }
@@ -133,7 +133,7 @@ section .signin .content .form .inputBox i
 {
   transform: translateY(-7.5px);
   font-size: 0.8em;
-  color: #fff;
+  color: #fefefe;
 }
 .signin .content .form .links 
 {
@@ -144,7 +144,7 @@ section .signin .content .form .inputBox i
 }
 .signin .content .form .links a 
 {
-  color: #fff;
+  color: #fefefe;
   text-decoration: none;
 }
 .signin .content .form .links a:nth-child(2)
@@ -203,7 +203,7 @@ input[type="submit"]:active
 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: #fefefe;
   text-align: center;
   margin-bottom: 40px;
   font-weight: bolder;
@@ -218,11 +218,11 @@ input[type="submit"]:active
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #fefefe;
   outline: none;
   border: none;
   margin-bottom: 30px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fefefe;
   border-radius: 0 !important;
   background: transparent;
 }
@@ -233,7 +233,7 @@ input[type="submit"]:active
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #fefefe;
   pointer-events: none;
   font-size: x-small;
   transition: .5s;
@@ -271,7 +271,7 @@ button
 .login-box button:hover
 {
   background: #19BC9B;
-  color: #fff;
+  color: #fefefe;
   border-radius: 5px;
   box-shadow: 0 0 5px #19BC9B,
               0 0 25px #19BC9B,
