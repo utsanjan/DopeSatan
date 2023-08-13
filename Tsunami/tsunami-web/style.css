@@ -181,10 +181,10 @@ input[type="submit"]:active
 }
 .login-box
 {
-  left: 0;
   top: 50%;
+  left: 50%;
   opacity: 100%;
-  width: 300px;
+  width: 400px;
   height: 300px;
   padding: 40px;
   z-index: 1000;
