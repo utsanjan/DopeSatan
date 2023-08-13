@@ -181,14 +181,14 @@ input[type="submit"]:active
 }
 .login-box
 {
-  position: absolute;
+  left: 0;
   top: 50%;
-  left: 50%;
   opacity: 100%;
   width: 300px;
   height: 300px;
   padding: 40px;
   z-index: 1000;
+  position: absolute;
   background: #2D2D30;  
   box-sizing: border-box;
   transform: translate(-50%, -50%);
