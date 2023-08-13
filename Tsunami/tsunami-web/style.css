@@ -189,7 +189,6 @@ input[type="submit"]:active
   height: 300px;
   padding: 40px;
   z-index: 1000;
-  transform: translate(-50%, -50%);
   background: #222;  
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
