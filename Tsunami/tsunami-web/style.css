@@ -194,10 +194,6 @@ input[type="submit"]:active
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 15px;
-  box-shadow: 0 0 5px #03e8f454,
-              0 0 25px #03e9f454,
-              0 0 50px #03e9f454,
-              0 0 100px #03e9f454;
 }
 .login-box h2
 {
