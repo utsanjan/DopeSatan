@@ -196,7 +196,7 @@ input[type="submit"]:active
 }
 .login-box
 {
-  top: 0%;
+  top: 50%;
   left: 50%;
   opacity: 100%;
   width: 100%;
@@ -209,7 +209,7 @@ input[type="submit"]:active
   border-radius: 15px;
   background: #2D2D30;
   box-sizing: border-box;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
 }
 .login-box h2
 {
