@@ -191,6 +191,7 @@ input[type="submit"]:active
   z-index: 1000;
   background: #2D2D30;  
   box-sizing: border-box;
+  transform: translate(-50%, -50%);
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 15px;
 }
