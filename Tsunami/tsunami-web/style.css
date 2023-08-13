@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 *
 {
   margin: 0;
@@ -91,7 +91,6 @@ section .signin .content h2
   color: #19BC9B;
   text-transform: uppercase;
   font-weight: bolder;
-  font-family: 'Lato', sans-serif;
 }
 section .signin .content .form 
 {
@@ -127,6 +126,19 @@ section .signin .content .form .inputBox i
   color: #aaa;
   transition: 0.5s;
   pointer-events: none;
+}
+.start
+{
+  display: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+#heading
+{
+  color: #e31411;
+  font-size: small;
+  margin-bottom: 55px;
+  margin-top: 5px;
 }
 .signin .content .form .inputBox input:focus ~ i,
 .signin .content .form .inputBox input:valid ~ i
@@ -184,20 +196,20 @@ input[type="submit"]:active
 }
 .login-box
 {
-  top: 50%;
+  top: 0%;
   left: 50%;
   opacity: 100%;
   width: 100%;
-  height: 300px;
   padding: 40px;
   z-index: 1000;
   max-width: 400px;
   min-width: 250px;
+  min-height: 150px;
   position: absolute;
   border-radius: 15px;
   background: #2D2D30;
   box-sizing: border-box;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 .login-box h2
 {
@@ -207,7 +219,6 @@ input[type="submit"]:active
   text-align: center;
   margin-bottom: 40px;
   font-weight: bolder;
-  font-family: 'Lato', sans-serif;
 }
 .login-box .user-box
 {
@@ -265,7 +276,7 @@ button
   overflow: hidden;
   transition: .5s;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   letter-spacing: 4px
 }
 .login-box button:hover
@@ -273,10 +284,10 @@ button
   background: #19BC9B;
   color: #fefefe;
   border-radius: 5px;
-  box-shadow: 0 0 5px #19BC9B,
-              0 0 25px #19BC9B,
-              0 0 50px #19BC9B,
-              0 0 100px #19BC9B;
+  box-shadow: 0 0 5px #19bc9b8e,
+              0 0 25px #19bc9b8e,
+              0 0 50px #19bc9b8e,
+              0 0 100px #19bc9b8e;
 }
 .login-box button a
 {
