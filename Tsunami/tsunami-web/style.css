@@ -207,8 +207,8 @@ input[type="submit"]:active
   min-height: 150px;
   position: absolute;
   border-radius: 15px;
-  background: #2D2D30;
   box-sizing: border-box;
+  background: transparent;
   transform: translate(-50%, -50%);
 }
 .login-box h2
