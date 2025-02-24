@@ -11,7 +11,7 @@ This Repository is entirely used to store my Brand Page's (DynaSage) assets.
 
 # 📲 Social Handles
 In case you want to find me on other platforms:<br>
-**➜ㅤ[Youtube](https://www.youtube.com/@utsanjan)<br>
+**➜ㅤ[Youtube](https://www.youtube.com/@dynasage)<br>
 ➜ㅤ[Instagram](https://www.instagram.com/utsanjan)<br>
 ➜ㅤ[LinkedIn](https://www.linkedin.com/in/utsanjan)<br>
-➜ㅤ[Facebook](https://www.facebook.com/utsanjan)**
+➜ㅤ[Facebook](https://www.facebook.com/thedynasage)**
