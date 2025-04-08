@@ -2,8 +2,8 @@
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSsgZvv8yb6aHhQ7o0gnoPJYQhVI8KLwuShiBfFqGnh0F_hjRXYcp8E0pixoGvhBrjgKSLThCQ3zUuPQ6W9RGmdrIPEo1ohpSUa8SGl_FCSxqg_72AUnT_ie0Tft4zsyBnE0T8uuKMZ6VhV8JGPavLLIoNWkQbT8hMoeU7FQhd3AbXtwb0XnEcOG_kgKA/s16000/Untitled%20design(1)%20(1).png"></a></h1>
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/utsanjan)‎ ‎
-[![](https://dcbadge.vercel.app/api/server/uavTPkr?style=plastic)](https://discord.gg/bvzTHWnD3n)‎ ‎
-[![](https://img.shields.io/github/license/utsanjan/DopeSatan?logoColor=red&style=plastic)](https://github.com/utsanjan/DopeSatan/blob/main/LICENSE)‎ ‎
+[![](https://dcbadge.vercel.app/api/server/uavTPkr?style=flat)](https://discord.gg/bvzTHWnD3n)‎ ‎
+[![](https://img.shields.io/github/license/utsanjan/DopeSatan?logoColor=red&style=flat)](https://github.com/utsanjan/DopeSatan/blob/main/LICENSE)‎ ‎
 [![Blog Page](https://img.shields.io/website?color=147FBC&label=DynaSage&style=flat&url=https%3A%2F%2Fwww.dynasage.com%2F)](https://www.dynasage.com/)‎ ‎
 
 This repository is designed to store assets for the brand page, DynaSage (formerly known as DopeSatan). We provide essential tools to assist you in launching and expanding your business. Additionally, you can visit our blog, where we discuss the latest trends in software, technology, ethical hacking, and cybersecurity, along with a diverse range of other topics through the provided link.
