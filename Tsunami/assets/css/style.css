@@ -406,7 +406,7 @@ svg {
 
 .popup {
 	width: 60%;
-	height: 300px;
+	height: 400px;
 	padding: 20px;
 	margin: 45% auto;
 	border-radius: 10px;
@@ -419,12 +419,14 @@ svg {
 .popup h2 {
 	margin-top: 0;
 	color: #333;
+	font-style: bold;
 	font-family: Tahoma, Arial, sans-serif;
 }
 
 .popup .content {
 	max-height: 80%;
 	overflow: auto;
+	font-size: small;
 }
 
 .overlay {
@@ -438,15 +440,19 @@ svg {
 }
 
 .button {
-	border-radius: 6px;
+	border-radius: 8px;
+	width: 70px;
 	border: none;
-	top: 60px;
-	left: 28px;
-	background: #00C4B4;
+	top: 0px;
+	left: 8.5px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: #4278E3;
 	position: absolute;
 	z-index: 16;
 	text-align: center;
 	font-weight: bold;
+	font-size: medium;
 }
 
 .framework {
