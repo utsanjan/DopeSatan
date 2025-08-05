@@ -411,14 +411,14 @@ svg {
 	margin: 45% auto;
 	border-radius: 10px;
 	position: relative;
-	background: #FDFEFF;
+	background: #F9F9F9;
 	z-index: 999999999999999;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .popup h2 {
 	margin-top: 0;
-	color: #333;
+	color: #141617;
 	font-style: bold;
 	font-family: Tahoma, Arial, sans-serif;
 }
@@ -427,6 +427,7 @@ svg {
 	max-height: 80%;
 	overflow: auto;
 	font-size: small;
+	color: #959595;
 }
 
 .overlay {
