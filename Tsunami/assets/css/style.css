@@ -406,7 +406,7 @@ svg {
 
 .popup {
 	width: 60%;
-	height: 350px;
+	height: 300px;
 	padding: 20px;
 	margin: 45% auto;
 	border-radius: 10px;
@@ -442,6 +442,7 @@ svg {
 .button {
 	border-radius: 8px;
 	width: 70px;
+	height: 20px;
 	border: none;
 	top: 0px;
 	left: 8.5px;
