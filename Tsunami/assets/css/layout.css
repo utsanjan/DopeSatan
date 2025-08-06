@@ -68,7 +68,7 @@ section {
 
 .frame2 {
     z-index: 5;
-    margin-top: -5px;
+    margin-top: -30px;
     margin-left: 50%;
     position: absolute;
     transform: translateX(-50%);
@@ -170,8 +170,8 @@ section {
 }
 
 .refresh-button {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,13 +189,15 @@ section {
     transition: background 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
 .refresh-button:hover {
     background: #355bb2;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
+
 .refresh-button svg {
-    width: 24px;
-    height: 24px;
+    width: 10px;
+    height: 10px;
     display: block;
     fill: #fff; /* Ensures the icon is white and visible */
     pointer-events: none;
