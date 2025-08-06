@@ -5,6 +5,7 @@
     <meta content='v1gDCOZUSdnv7htJcbtm' name='bulletprofit' />
     <link href='https://css.gg/play-pause.css' rel='stylesheet' />
     <link rel="stylesheet" href="../css/layout.css" type='text/css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name='google-adsense-platform-domain' content='blogspot.com' />
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
     <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
@@ -17,7 +18,10 @@
     <div style='width:100%; height:130px; pointer-events:none; background-image: linear-gradient(#0D101E,#1B2333); top:0; position:absolute; z-index:1000; border:none;'></div>
     <div style='width:100%; height:20px; pointer-events:none; background-image: linear-gradient(#1B2333,rgba(0, 0, 0, 0)); top:129px; position:absolute; z-index:1000; border:none;'></div>
     <div style='width:100%; height:30%; background:rgba(0, 0, 0, 0); margin-left:-100px; position:absolute; z-index:9'></div>
-    <iframe class="frame2" allowfullscreen='true' allowtransparency='true' frameborder='no' height='100%' id='iFrameID' sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals' scrolling='no' src='https://render-tau.onrender.com' width='100%'></iframe>
+    <button class="refresh-button" onclick="var ifr=document.getElementsByName('Right')[0]; ifr.src=ifr.src;">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button>
+    <iframe class="frame2" allowfullscreen='true' allowtransparency='true' frameborder='no' height='100%' id='iFrameID' name="Right" sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals' scrolling='no' src='https://render-tau.onrender.com' width='100%'></iframe>
     <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2659626136-widgets.js"></script>
     <script type="text/javascript" src="../js/server.js"></script>
 </body>
