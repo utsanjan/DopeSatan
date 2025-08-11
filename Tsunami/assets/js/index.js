@@ -1,3 +1,9 @@
+function initializeApp() {
+const isInWebView = navigator.userAgent.includes('Tsunami/1.0 (com.dopesatan.tsunami)');
+if (!isInWebView) window.location = "https://github.com/utsanjan/Tsunami-Bomber-Android/releases/download/beta-v1.3/Tsunami.signed.release-v1.apk";
+else document.body.style.display = 'block';
+}
+
 function on() {
     document.getElementById("overlay").style.display = "block";
 }

@@ -2,6 +2,7 @@
 
 body {
     font-family: Lato, sans-serif;
+    display: none;
 }
 
 .body-styles {
@@ -192,13 +193,14 @@ section {
 
 .refresh-button:hover {
     background: #355bb2;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .refresh-button svg {
     width: 15px;
     height: 15px;
     display: block;
-    fill: #fff; /* Ensures the icon is white and visible */
+    fill: #fff;
+    /* Ensures the icon is white and visible */
     pointer-events: none;
 }

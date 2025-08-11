@@ -1,3 +1,8 @@
+function initializePage() {
+    if (window.self !== window.top) document.body.style.display = 'block';
+    else window.location = "../../index.html";
+}
+
 function scrollBottom() {
     window.scrollTo(99999, 99999);
 }

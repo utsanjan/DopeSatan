@@ -1,3 +1,8 @@
+function initializePage() {
+    if (window.self !== window.top) document.body.style.display = 'block';
+    else window.location = "../../index.html";
+}
+
 window['__wavt'] = 'AOuZoY40P_t6iAdN9ummbTO1vtFZFLlSzQ:1682496754618';
 _WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7386992261808508022', '//web3hmkjpvnf3n1bewkovl2hws0tmdjhozgxr.blogspot.com/', '7386992261808508022');
 _WidgetManager._SetDataContext([{
