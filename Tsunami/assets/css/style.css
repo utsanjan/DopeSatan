@@ -2,7 +2,7 @@ body {
     color: #ccc;
     background: #1C2333;
     font-family: sans-serif;
-    display: none;
+    display: block;
     overflow: hidden;
 }
 
