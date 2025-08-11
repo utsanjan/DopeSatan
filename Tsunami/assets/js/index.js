@@ -4,7 +4,9 @@ if (!isInWebView) {
     window.location = "https://cutt.ly/srF06bOM";
     document.body.style.display = 'none';
 }
-else document.body.style.display = 'block';
+else {
+    document.getElementById("framework").style.display = 'block';
+}
 }
 
 function on() {
