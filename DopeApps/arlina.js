@@ -1,4 +1,5 @@
-! function () {
+// https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js //
+!function () {
    function f() {
       var a = document.createElement("div");
       a.id = "arlinablock";
