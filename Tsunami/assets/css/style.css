@@ -1,735 +1,740 @@
 body {
-    color: #ccc;
-    background: #1C2333;
-    font-family: sans-serif;
-    display: block;
-    overflow: hidden;
+	color: #ccc;
+	background: #1C2333;
+	font-family: sans-serif;
+	display: block;
+	overflow: hidden;
 }
 
 h1,
 h2 {
-    margin: 0;
-    text-align: center;
+	margin: 0;
+	text-align: center;
 }
 
 a {
-    color: #ccc;
+	color: #ccc;
 }
 
 section {
-    padding: 20px;
+	padding: 20px;
 }
 
 .loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999999999;
-    background-image: linear-gradient(#0D101E, #1C2333);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+	background-image: linear-gradient(#0D101E, #1C2333);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#circle6 {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 30px;
-    width: 30px;
-    z-index: 10000;
-    margin: -25px 0 0 -25px;
-    border: 4px rgba(0, 0, 0, 0.25) solid;
-    border-top: 10px #008744 solid;
-    border-right: 10px #0057e7 solid;
-    border-bottom: 10px #d62d20 solid;
-    border-left: 10px #ffa700 solid;
-    border-radius: 50%;
-    -webkit-animation: spin6 1s infinite linear;
-    animation: spin6 1s infinite linear;
+#circle {
+	width: 50px;
+	height: 50px;
+	z-index: 10000;
+	position: absolute;
+	border: 5px solid #fafafada;
+	border-bottom-color: #4478e3;
+	border-radius: 50%;
+	display: block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @-webkit-keyframes spin6 {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
+	to {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
 }
 
 @keyframes spin6 {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
+	to {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
 }
 
 footer {
-    width: 110%;
-    bottom: -5px;
-    position: fixed;
-    margin-left: -10px;
-    z-index: 10000050;
+	width: 110%;
+	bottom: -5px;
+	position: fixed;
+	margin-left: -10px;
+	z-index: 10000050;
 }
 
 footer div {
-    background-color: #4478e3;
-    margin: -5px 0px 0px 0px;
-    padding: 0px;
-    color: #fff;
-    text-align: center;
+	background-color: #4478e3;
+	margin: -5px 0px 0px 0px;
+	padding: 0px;
+	color: #fff;
+	text-align: center;
 }
 
 svg {
-    width: 100%;
+	width: 100%;
 }
 
 .wave {
-    animation: wave 3s linear;
-    animation-iteration-count: infinite;
-    fill: #4478e3;
+	animation: wave 3s linear;
+	animation-iteration-count: infinite;
+	fill: #4478e3;
 }
 
 .drop {
-    fill: transparent;
-    animation: drop 5s ease infinite normal;
-    stroke: #4478e3;
-    stroke-width: 0.5;
-    opacity: .6;
-    transform: translateY(80%);
+	fill: transparent;
+	animation: drop 5s ease infinite normal;
+	stroke: #4478e3;
+	stroke-width: 0.5;
+	opacity: .6;
+	transform: translateY(80%);
 }
 
 .drop1 {
-    transform-origin: 20px 3px;
+	transform-origin: 20px 3px;
 }
 
 .drop2 {
-    animation-delay: 3s;
-    animation-duration: 3s;
-    transform-origin: 25px 3px;
+	animation-delay: 3s;
+	animation-duration: 3s;
+	transform-origin: 25px 3px;
 }
 
 .drop3 {
-    animation-delay: -2s;
-    animation-duration: 3.4s;
-    transform-origin: 16px 3px;
+	animation-delay: -2s;
+	animation-duration: 3.4s;
+	transform-origin: 16px 3px;
 }
 
 .gooeff {
-    filter: url(#goo);
+	filter: url(#goo);
 }
 
 #wave2 {
-    animation-duration: 5s;
-    animation-direction: reverse;
-    opacity: .6
+	animation-duration: 5s;
+	animation-direction: reverse;
+	opacity: .6
 }
 
 #wave3 {
-    animation-duration: 7s;
-    opacity: .3;
+	animation-duration: 7s;
+	opacity: .3;
 }
 
 @keyframes drop {
-    0% {
-        transform: translateY(80%);
-        opacity: .6;
-    }
+	0% {
+		transform: translateY(80%);
+		opacity: .6;
+	}
 
-    80% {
-        transform: translateY(80%);
-        opacity: .6;
-    }
+	80% {
+		transform: translateY(80%);
+		opacity: .6;
+	}
 
-    90% {
-        transform: translateY(10%);
-        opacity: .6;
-    }
+	90% {
+		transform: translateY(10%);
+		opacity: .6;
+	}
 
-    100% {
-        transform: translateY(0%) scale(1.5);
-        stroke-width: 0.2;
-        opacity: 0;
-    }
+	100% {
+		transform: translateY(0%) scale(1.5);
+		stroke-width: 0.2;
+		opacity: 0;
+	}
 }
 
 @keyframes wave {
-    to {
-        transform: translateX(-100%);
-    }
+	to {
+		transform: translateX(-100%);
+	}
 }
 
 @keyframes ball {
-    to {
-        transform: translateY(20%);
-    }
+	to {
+		transform: translateY(20%);
+	}
 }
 
 #hma-top {
-    display: none !important;
+	display: none !important;
 }
 
 #af-smart-banner {
-    display: none !important;
+	display: none !important;
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px)
-    }
+	0% {
+		opacity: 0;
+		transform: translateY(-20px)
+	}
 
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
+	100% {
+		opacity: 1;
+		transform: translateY(0)
+	}
 }
 
 @keyframes rubberBand {
-    from {
-        transform: scale3d(1, 1, 1)
-    }
+	from {
+		transform: scale3d(1, 1, 1)
+	}
 
-    30% {
-        transform: scale3d(1.25, 0.75, 1)
-    }
+	30% {
+		transform: scale3d(1.25, 0.75, 1)
+	}
 
-    40% {
-        transform: scale3d(0.75, 1.25, 1)
-    }
+	40% {
+		transform: scale3d(0.75, 1.25, 1)
+	}
 
-    50% {
-        transform: scale3d(1.15, 0.85, 1)
-    }
+	50% {
+		transform: scale3d(1.15, 0.85, 1)
+	}
 
-    65% {
-        transform: scale3d(.95, 1.05, 1)
-    }
+	65% {
+		transform: scale3d(.95, 1.05, 1)
+	}
 
-    75% {
-        transform: scale3d(1.05, .95, 1)
-    }
+	75% {
+		transform: scale3d(1.05, .95, 1)
+	}
 
-    to {
-        transform: scale3d(1, 1, 1)
-    }
+	to {
+		transform: scale3d(1, 1, 1)
+	}
 }
 
 .Arpian-ads {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    padding: 0;
-    box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .1);
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in;
-    align-items: center;
-    justify-content: center;
-    background-color: #fefefe;
-    z-index: 20;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	padding: 0;
+	box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .1);
+	-webkit-transition: all .1s ease-in;
+	transition: all .1s ease-in;
+	align-items: center;
+	justify-content: center;
+	background-color: #fefefe;
+	z-index: 20;
 }
 
 .Arpian-ads-close {
-    right: 0;
-    top: -25px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px 0 0;
-    background-color: #fefefe;
-    box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .08);
+	right: 0;
+	top: -25px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px 0 0;
+	background-color: #fefefe;
+	box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .08);
 }
 
 .Arpian-ads .Arpian-ads-close svg {
-    width: 22px;
-    height: 22px;
-    fill: #000;
+	width: 22px;
+	height: 22px;
+	fill: #000;
 }
 
 .Arpian-ads .Arpian-ads-content {
-    pointer-events: none;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    text-align: center;
-    margin-top: 0px;
-    height: 90px;
-    width: 100%;
+	pointer-events: none;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-top: 0px;
+	height: 90px;
+	width: 100%;
 }
 
 #arlinablock .header {
-    margin: 0 0 15px 0;
-    display: none
+	margin: 0 0 15px 0;
+	display: none
 }
 
 #arlinablock {
-    background: #0D101E;
-    background-image: url("https://lh3.googleusercontent.com/-Nx39v_e2_j0/YSYPJ-f9luI/AAAAAAAAky4/ENS47JA08eIWP_XR5vgfpWVzrWEmxCdtgCLcBGAsYHQ/arlina.png");
-    position: fixed;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
-    z-index: 9999999999;
-    animation: fadeInDown 1s;
-    background-repeat: no-repeat;
-    background-size: 200px auto;
-    background-position: center;
+	background: #0D101E;
+	background-image: url("https://lh3.googleusercontent.com/-Nx39v_e2_j0/YSYPJ-f9luI/AAAAAAAAky4/ENS47JA08eIWP_XR5vgfpWVzrWEmxCdtgCLcBGAsYHQ/arlina.png");
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	z-index: 9999999999;
+	animation: fadeInDown 1s;
+	background-repeat: no-repeat;
+	background-size: 200px auto;
+	background-position: center;
 }
 
 #arlinablock .inner {
-    background: #EEEEEE;
-    color: #48525C;
-    display: none;
-    text-align: center;
-    width: 600px;
-    padding: 40px;
-    border-radius: 15px;
-    margin: 7% auto 2% auto;
-    animation: rubberBand 1s;
-    font-weight: bold
+	background: #EEEEEE;
+	color: #48525C;
+	display: none;
+	text-align: center;
+	width: 600px;
+	padding: 40px;
+	border-radius: 15px;
+	margin: 7% auto 2% auto;
+	animation: rubberBand 1s;
+	font-weight: bold
 }
 
 #arlinablock button {
-    padding: 10px 20px;
-    border: 0;
-    background: rgba(0, 0, 0, 0.15);
-    color: #fff;
-    border-radius: 7px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: all .3s;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
+	padding: 10px 20px;
+	border: 0;
+	background: rgba(0, 0, 0, 0.15);
+	color: #fff;
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	transition: all .3s;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
 }
 
 #arlinablock button:hover {
-    background: rgba(0, 0, 0, 0.35);
-    color: #fff;
-    outline: none;
-    border-radius: 7px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
+	background: rgba(0, 0, 0, 0.35);
+	color: #fff;
+	outline: none;
+	border-radius: 7px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
 }
 
 #arlinablock button.active,
 #arlinablock button:hover.active {
-    background: #FFF;
-    color: #FFF;
-    outline: none;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 7px
+	background: #FFF;
+	color: #FFF;
+	outline: none;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 7px
 }
 
 #arlinablock .fixblock {
-    background: #fff;
-    text-align: left;
-    color: #48525C;
-    padding: 20px;
-    height: 300px;
-    overflow: auto;
-    line-height: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
+	background: #fff;
+	text-align: left;
+	color: #48525C;
+	padding: 20px;
+	height: 300px;
+	overflow: auto;
+	line-height: 30px;
+	border-radius: 10px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
 }
 
 #arlinablock .fixblock div {
-    display: none
+	display: none
 }
 
 #arlinablock ol {
-    margin-left: 20px
+	margin-left: 20px
 }
 
 #arlinablock .fixblock div.active {
-    display: block
+	display: block
 }
 
 @media(max-width:768px) {
-    #arlinablock .inner {
-        width: calc(100% - 20px);
-        margin: 10px auto;
-        padding: 15px
-    }
+	#arlinablock .inner {
+		width: calc(100% - 20px);
+		margin: 10px auto;
+		padding: 15px
+	}
 }
 
 .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid #4278E3;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
+	font-size: 1em;
+	padding: 10px;
+	color: #fff;
+	border: 2px solid #4278E3;
+	border-radius: 20px/50px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 
 #overlay {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: fixed;
-    z-index: 99999999999999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	z-index: 99999999999999;
 }
 
 .popup {
-    width: 60%;
-    max-width: 500px;
-    height: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2a344a;
-    z-index: 999999999999999;
-    box-shadow: 0px 50px 65px 100px #1B2333;
-    -webkit-box-shadow: 0px 50px 65px 100px #1B2333;
-    -moz-box-shadow: 0px 50px 65px 100px #1B2333;
+	width: 60%;
+	max-width: 500px;
+	height: 300px;
+	padding: 20px;
+	border-radius: 15px;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2a344a;
+	z-index: 999999999999999;
+	box-shadow: 0px 50px 65px 100px #1B2333;
+	-webkit-box-shadow: 0px 50px 65px 100px #1B2333;
+	-moz-box-shadow: 0px 50px 65px 100px #1B2333;
 }
 
 .popup h2 {
-    margin-top: 0;
-    line-height: 35px;
-    color: #F9F9F9;
-    font-style: bold;
-    font-family: 'Orbitron', sans-serif;
+	margin-top: 0;
+	line-height: 35px;
+	color: #F9F9F9;
+	font-style: bold;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .popup .content {
-    max-height: 80%;
-    overflow: auto;
-    font-size: small;
-    color: #d3d1cb;
+	max-height: 80%;
+	overflow: auto;
+	font-size: small;
+	color: #d3d1cb;
 }
 
 .overlay {
-    width: 100%;
-    height: 30%;
-    pointer-events: none;
-    background: rgba(0, 0, 0, 0);
-    top: -50px;
-    position: absolute;
-    z-index: 1000000000000;
+	width: 100%;
+	height: 30%;
+	pointer-events: none;
+	background: rgba(0, 0, 0, 0);
+	top: -50px;
+	position: absolute;
+	z-index: 1000000000000;
 }
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 8px;
-    width: 70px;
-    height: 20px;
-    border: none;
-    top: 0px;
-    left: 8.5px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background: #4278E3;
-    position: absolute;
-    z-index: 16;
-    text-align: center;
-    font-weight: bold;
-    font-size: medium;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 8px;
+	width: 70px;
+	height: 20px;
+	border: none;
+	top: 0px;
+	left: 8.5px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: #4278E3;
+	position: absolute;
+	z-index: 16;
+	text-align: center;
+	font-weight: bold;
+	font-size: medium;
 }
 
 .framework {
-    top: 0;
-    z-index: 5;
-    width: 100%;
-    height: 95%;
-    display: none;
-    position: absolute;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+	height: 95%;
+	display: none;
+	position: absolute;
 }
 
 .trackframe {
-    z-index: -1;
-    opacity: 0;
-    width: 0px;
-    height: 0px;
+	z-index: -1;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
 }
 
 .hero {
-    font-size: 20px;
-    line-height: 1;
-    display: inline-block;
-    color: #fff;
-    z-index: 2;
-    letter-spacing: 0px;
-    font-family: 'Orbitron', sans-serif;
-    filter: drop-shadow(0 1px 3px);
+	font-size: 20px;
+	line-height: 1;
+	display: inline-block;
+	color: #fff;
+	z-index: 2;
+	letter-spacing: 0px;
+	font-family: 'Orbitron', sans-serif;
+	filter: drop-shadow(0 1px 3px);
 }
 
 .demo {
-    height: 100px;
-    background: #fff;
+	height: 100px;
+	background: #fff;
 }
 
 .frame1 {
-    top: 0;
-    left: 0;
-    z-index: 5;
-    margin-top: 0px;
-    position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	margin-top: 0px;
+	position: absolute;
 }
 
 .frame2 {
-    z-index: 5;
-    margin-top: -5px;
-    margin-left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    border-radius: 0px 0px 10px 10px;
+	z-index: 5;
+	margin-top: -5px;
+	margin-left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	border-radius: 0px 0px 10px 10px;
 }
 
 .ads {
-    left: 0;
-    width: 87%;
-    bottom: 27px;
-    height: 90px;
-    overflow: hidden;
-    margin-left: 50%;
-    z-index: 10000051;
-    position: absolute;
-    border-radius: 10px;
-    border: 2px solid wheat;
-    transform: translateX(-50%);
-    -webkit-box-shadow: 0px 0px 20px 5px rgba(48, 48, 48, 0.7);
-    -moz-box-shadow: 0px 0px 20px 5px rgba(25, 31, 53, 0.7);
-    box-shadow: 0px 0px 20px 5px rgba(3, 4, 8, 0.7);
+	left: 0;
+	width: 87%;
+	bottom: 27px;
+	height: 90px;
+	overflow: hidden;
+	margin-left: 50%;
+	z-index: 10000051;
+	position: absolute;
+	border-radius: 10px;
+	border: 2px solid wheat;
+	transform: translateX(-50%);
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(48, 48, 48, 0.7);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(25, 31, 53, 0.7);
+	box-shadow: 0px 0px 20px 5px rgba(3, 4, 8, 0.7);
 }
 
 .layers {
-    position: relative;
+	position: relative;
 }
 
 .layers::before,
 .layers::after {
-    content: attr(data-text);
-    position: absolute;
-    width: 110%;
-    z-index: -1;
+	content: attr(data-text);
+	position: absolute;
+	width: 110%;
+	z-index: -1;
 }
 
 .layers::before {
-    top: 10px;
-    left: 15px;
-    color: #e0287d;
+	top: 10px;
+	left: 15px;
+	color: #e0287d;
 }
 
 .layers::after {
-    top: 5px;
-    left: -10px;
-    color: #1bc7fb;
+	top: 5px;
+	left: -10px;
+	color: #1bc7fb;
 }
 
 .single-path {
-    clip-path: polygon(0% 12%, 53% 12%, 53% 26%, 25% 26%, 25% 86%, 31% 86%, 31% 0%, 53% 0%, 53% 84%, 92% 84%, 92% 82%, 70% 82%, 70% 29%, 78% 29%, 78% 65%, 69% 65%, 69% 66%, 77% 66%, 77% 45%, 85% 45%, 85% 26%, 97% 26%, 97% 28%, 84% 28%, 84% 34%, 54% 34%, 54% 89%, 30% 89%, 30% 58%, 83% 58%, 83% 5%, 68% 5%, 68% 36%, 62% 36%, 62% 1%, 12% 1%, 12% 34%, 60% 34%, 60% 57%, 98% 57%, 98% 83%, 1% 83%, 1% 53%, 91% 53%, 91% 84%, 8% 84%, 8% 83%, 4% 83%);
+	clip-path: polygon(0% 12%, 53% 12%, 53% 26%, 25% 26%, 25% 86%, 31% 86%, 31% 0%, 53% 0%, 53% 84%, 92% 84%, 92% 82%, 70% 82%, 70% 29%, 78% 29%, 78% 65%, 69% 65%, 69% 66%, 77% 66%, 77% 45%, 85% 45%, 85% 26%, 97% 26%, 97% 28%, 84% 28%, 84% 34%, 54% 34%, 54% 89%, 30% 89%, 30% 58%, 83% 58%, 83% 5%, 68% 5%, 68% 36%, 62% 36%, 62% 1%, 12% 1%, 12% 34%, 60% 34%, 60% 57%, 98% 57%, 98% 83%, 1% 83%, 1% 53%, 91% 53%, 91% 84%, 8% 84%, 8% 83%, 4% 83%);
 }
 
 .paths {
-    animation: paths 5s step-end infinite;
+	animation: paths 5s step-end infinite;
 }
 
 @keyframes paths {
-    0% {
-        clip-path: polygon(0% 43%, 83% 43%, 83% 22%, 23% 22%, 23% 24%, 91% 24%, 91% 26%, 18% 26%, 18% 83%, 29% 83%, 29% 17%, 41% 17%, 41% 39%, 18% 39%, 18% 82%, 54% 82%, 54% 88%, 19% 88%, 19% 4%, 39% 4%, 39% 14%, 76% 14%, 76% 52%, 23% 52%, 23% 35%, 19% 35%, 19% 8%, 36% 8%, 36% 31%, 73% 31%, 73% 16%, 1% 16%, 1% 56%, 50% 56%, 50% 8%);
-    }
+	0% {
+		clip-path: polygon(0% 43%, 83% 43%, 83% 22%, 23% 22%, 23% 24%, 91% 24%, 91% 26%, 18% 26%, 18% 83%, 29% 83%, 29% 17%, 41% 17%, 41% 39%, 18% 39%, 18% 82%, 54% 82%, 54% 88%, 19% 88%, 19% 4%, 39% 4%, 39% 14%, 76% 14%, 76% 52%, 23% 52%, 23% 35%, 19% 35%, 19% 8%, 36% 8%, 36% 31%, 73% 31%, 73% 16%, 1% 16%, 1% 56%, 50% 56%, 50% 8%);
+	}
 
-    5% {
-        clip-path: polygon(0% 29%, 44% 29%, 44% 83%, 94% 83%, 94% 56%, 11% 56%, 11% 64%, 94% 64%, 94% 70%, 88% 70%, 88% 32%, 18% 32%, 18% 96%, 10% 96%, 10% 62%, 9% 62%, 9% 84%, 68% 84%, 68% 50%, 52% 50%, 52% 55%, 35% 55%, 35% 87%, 25% 87%, 25% 39%, 15% 39%, 15% 88%, 52% 88%);
-    }
+	5% {
+		clip-path: polygon(0% 29%, 44% 29%, 44% 83%, 94% 83%, 94% 56%, 11% 56%, 11% 64%, 94% 64%, 94% 70%, 88% 70%, 88% 32%, 18% 32%, 18% 96%, 10% 96%, 10% 62%, 9% 62%, 9% 84%, 68% 84%, 68% 50%, 52% 50%, 52% 55%, 35% 55%, 35% 87%, 25% 87%, 25% 39%, 15% 39%, 15% 88%, 52% 88%);
+	}
 
-    30% {
-        clip-path: polygon(0% 53%, 93% 53%, 93% 62%, 68% 62%, 68% 37%, 97% 37%, 97% 89%, 13% 89%, 13% 45%, 51% 45%, 51% 88%, 17% 88%, 17% 54%, 81% 54%, 81% 75%, 79% 75%, 79% 76%, 38% 76%, 38% 28%, 61% 28%, 61% 12%, 55% 12%, 55% 62%, 68% 62%, 68% 51%, 0% 51%, 0% 92%, 63% 92%, 63% 4%, 65% 4%);
-    }
+	30% {
+		clip-path: polygon(0% 53%, 93% 53%, 93% 62%, 68% 62%, 68% 37%, 97% 37%, 97% 89%, 13% 89%, 13% 45%, 51% 45%, 51% 88%, 17% 88%, 17% 54%, 81% 54%, 81% 75%, 79% 75%, 79% 76%, 38% 76%, 38% 28%, 61% 28%, 61% 12%, 55% 12%, 55% 62%, 68% 62%, 68% 51%, 0% 51%, 0% 92%, 63% 92%, 63% 4%, 65% 4%);
+	}
 
-    45% {
-        clip-path: polygon(0% 33%, 2% 33%, 2% 69%, 58% 69%, 58% 94%, 55% 94%, 55% 25%, 33% 25%, 33% 85%, 16% 85%, 16% 19%, 5% 19%, 5% 20%, 79% 20%, 79% 96%, 93% 96%, 93% 50%, 5% 50%, 5% 74%, 55% 74%, 55% 57%, 96% 57%, 96% 59%, 87% 59%, 87% 65%, 82% 65%, 82% 39%, 63% 39%, 63% 92%, 4% 92%, 4% 36%, 24% 36%, 24% 70%, 1% 70%, 1% 43%, 15% 43%, 15% 28%, 23% 28%, 23% 71%, 90% 71%, 90% 86%, 97% 86%, 97% 1%, 60% 1%, 60% 67%, 71% 67%, 71% 91%, 17% 91%, 17% 14%, 39% 14%, 39% 30%, 58% 30%, 58% 11%, 52% 11%, 52% 83%, 68% 83%);
-    }
+	45% {
+		clip-path: polygon(0% 33%, 2% 33%, 2% 69%, 58% 69%, 58% 94%, 55% 94%, 55% 25%, 33% 25%, 33% 85%, 16% 85%, 16% 19%, 5% 19%, 5% 20%, 79% 20%, 79% 96%, 93% 96%, 93% 50%, 5% 50%, 5% 74%, 55% 74%, 55% 57%, 96% 57%, 96% 59%, 87% 59%, 87% 65%, 82% 65%, 82% 39%, 63% 39%, 63% 92%, 4% 92%, 4% 36%, 24% 36%, 24% 70%, 1% 70%, 1% 43%, 15% 43%, 15% 28%, 23% 28%, 23% 71%, 90% 71%, 90% 86%, 97% 86%, 97% 1%, 60% 1%, 60% 67%, 71% 67%, 71% 91%, 17% 91%, 17% 14%, 39% 14%, 39% 30%, 58% 30%, 58% 11%, 52% 11%, 52% 83%, 68% 83%);
+	}
 
-    76% {
-        clip-path: polygon(0% 26%, 15% 26%, 15% 73%, 72% 73%, 72% 70%, 77% 70%, 77% 75%, 8% 75%, 8% 42%, 4% 42%, 4% 61%, 17% 61%, 17% 12%, 26% 12%, 26% 63%, 73% 63%, 73% 43%, 90% 43%, 90% 67%, 50% 67%, 50% 41%, 42% 41%, 42% 46%, 50% 46%, 50% 84%, 96% 84%, 96% 78%, 49% 78%, 49% 25%, 63% 25%, 63% 14%);
-    }
+	76% {
+		clip-path: polygon(0% 26%, 15% 26%, 15% 73%, 72% 73%, 72% 70%, 77% 70%, 77% 75%, 8% 75%, 8% 42%, 4% 42%, 4% 61%, 17% 61%, 17% 12%, 26% 12%, 26% 63%, 73% 63%, 73% 43%, 90% 43%, 90% 67%, 50% 67%, 50% 41%, 42% 41%, 42% 46%, 50% 46%, 50% 84%, 96% 84%, 96% 78%, 49% 78%, 49% 25%, 63% 25%, 63% 14%);
+	}
 
-    90% {
-        clip-path: polygon(0% 41%, 13% 41%, 13% 6%, 87% 6%, 87% 93%, 10% 93%, 10% 13%, 89% 13%, 89% 6%, 3% 6%, 3% 8%, 16% 8%, 16% 79%, 0% 79%, 0% 99%, 92% 99%, 92% 90%, 5% 90%, 5% 60%, 0% 60%, 0% 48%, 89% 48%, 89% 13%, 80% 13%, 80% 43%, 95% 43%, 95% 19%, 80% 19%, 80% 85%, 38% 85%, 38% 62%);
-    }
+	90% {
+		clip-path: polygon(0% 41%, 13% 41%, 13% 6%, 87% 6%, 87% 93%, 10% 93%, 10% 13%, 89% 13%, 89% 6%, 3% 6%, 3% 8%, 16% 8%, 16% 79%, 0% 79%, 0% 99%, 92% 99%, 92% 90%, 5% 90%, 5% 60%, 0% 60%, 0% 48%, 89% 48%, 89% 13%, 80% 13%, 80% 43%, 95% 43%, 95% 19%, 80% 19%, 80% 85%, 38% 85%, 38% 62%);
+	}
 
-    1%,
-    7%,
-    33%,
-    47%,
-    78%,
-    93% {
-        clip-path: none;
-    }
+	1%,
+	7%,
+	33%,
+	47%,
+	78%,
+	93% {
+		clip-path: none;
+	}
 }
 
 .movement {
-    /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
-    position: relative;
-    animation: movement 8s step-end infinite;
+	/* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
+	position: relative;
+	animation: movement 8s step-end infinite;
 }
 
 @keyframes movement {
-    0% {
-        top: 0px;
-        left: -20px;
-    }
+	0% {
+		top: 0px;
+		left: -20px;
+	}
 
-    15% {
-        top: 10px;
-        left: 10px;
-    }
+	15% {
+		top: 10px;
+		left: 10px;
+	}
 
-    60% {
-        top: 5px;
-        left: -10px;
-    }
+	60% {
+		top: 5px;
+		left: -10px;
+	}
 
-    75% {
-        top: -5px;
-        left: 20px;
-    }
+	75% {
+		top: -5px;
+		left: 20px;
+	}
 
-    100% {
-        top: 10px;
-        left: 5px;
-    }
+	100% {
+		top: 10px;
+		left: 5px;
+	}
 }
 
 .opacity {
-    animation: opacity 5s step-end infinite;
+	animation: opacity 5s step-end infinite;
 }
 
 @keyframes opacity {
-    0% {
-        opacity: 0.1;
-    }
+	0% {
+		opacity: 0.1;
+	}
 
-    5% {
-        opacity: 0.7;
-    }
+	5% {
+		opacity: 0.7;
+	}
 
-    30% {
-        opacity: 0.4;
-    }
+	30% {
+		opacity: 0.4;
+	}
 
-    45% {
-        opacity: 0.6;
-    }
+	45% {
+		opacity: 0.6;
+	}
 
-    76% {
-        opacity: 0.4;
-    }
+	76% {
+		opacity: 0.4;
+	}
 
-    90% {
-        opacity: 0.8;
-    }
+	90% {
+		opacity: 0.8;
+	}
 
-    1%,
-    7%,
-    33%,
-    47%,
-    78%,
-    93% {
-        opacity: 0;
-    }
+	1%,
+	7%,
+	33%,
+	47%,
+	78%,
+	93% {
+		opacity: 0;
+	}
 }
 
 .font {
-    animation: font 7s step-end infinite;
+	animation: font 7s step-end infinite;
 }
 
 @keyframes font {
-    0% {
-        font-weight: 100;
-        color: #e0287d;
-        filter: blur(3px);
-    }
+	0% {
+		font-weight: 100;
+		color: #e0287d;
+		filter: blur(3px);
+	}
 
-    20% {
-        font-weight: 500;
-        color: #fff;
-        filter: blur(0);
-    }
+	20% {
+		font-weight: 500;
+		color: #fff;
+		filter: blur(0);
+	}
 
-    50% {
-        font-weight: 300;
-        color: #1bc7fb;
-        filter: blur(2px);
-    }
+	50% {
+		font-weight: 300;
+		color: #1bc7fb;
+		filter: blur(2px);
+	}
 
-    60% {
-        font-weight: 700;
-        color: #fff;
-        filter: blur(0);
-    }
+	60% {
+		font-weight: 700;
+		color: #fff;
+		filter: blur(0);
+	}
 
-    90% {
-        font-weight: 500;
-        color: #e0287d;
-        filter: blur(6px);
-    }
+	90% {
+		font-weight: 500;
+		color: #e0287d;
+		filter: blur(6px);
+	}
 }
 
 .glitch span {
-    animation: paths 5s step-end infinite;
+	animation: paths 5s step-end infinite;
 }
 
 .glitch::before {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 8s step-end infinite, movement 10s step-end infinite;
+	animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 8s step-end infinite, movement 10s step-end infinite;
 }
 
 .glitch::after {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 7s step-end infinite, movement 8s step-end infinite;
+	animation: paths 5s step-end infinite, opacity 5s step-end infinite, font 7s step-end infinite, movement 8s step-end infinite;
 }
 
 .hero-container {
-    position: relative;
-    padding: 200px 0;
-    text-align: center;
+	position: relative;
+	padding: 200px 0;
+	text-align: center;
 }
 
 .btn {
-    text-align: center;
-    background: transparent;
-    z-index: 50000;
-    font-weight: bold;
+	text-align: center;
+	background: transparent;
+	z-index: 50000;
+	font-weight: bold;
 }
 
 .hero {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
 }
