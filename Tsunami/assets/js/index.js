@@ -1,6 +1,9 @@
 function initializeApp() {
 const isInWebView = navigator.userAgent.includes('wv');
-if (!isInWebView) window.location = "https://cutt.ly/srF06bOM";
+if (!isInWebView) {
+    window.location = "https://cutt.ly/srF06bOM";
+    document.body.style.display = 'none';
+}
 else document.body.style.display = 'block';
 }
 
