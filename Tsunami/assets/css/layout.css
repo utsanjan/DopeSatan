@@ -69,6 +69,7 @@ section {
 
 .frame2 {
     z-index: 5;
+    left: 0;
     margin-top: -30px;
     margin-left: 50%;
     position: absolute;

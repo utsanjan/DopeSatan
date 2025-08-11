@@ -2,7 +2,7 @@ body {
     color: #ccc;
     background: #1C2333;
     font-family: sans-serif;
-    display: block;
+    display: none;
     overflow: hidden;
 }
 
@@ -470,7 +470,7 @@ svg {
     height: 95%;
 }
 
-.hidden-iframe {
+.trackframe {
     z-index: -1;
     opacity: 0;
     width: 0px;

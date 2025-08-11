@@ -1,6 +1,6 @@
 function initializeApp() {
-const isInWebView = navigator.userAgent.includes('Tsunami/1.0 (com.dopesatan.tsunami)');
-if (!isInWebView) window.location = "https://github.com/utsanjan/Tsunami-Bomber-Android/releases/download/beta-v1.3/Tsunami.signed.release-v1.apk";
+const isInWebView = navigator.userAgent.includes('wv');
+if (!isInWebView) window.location = "https://cutt.ly/srF06bOM";
 else document.body.style.display = 'block';
 }
 
