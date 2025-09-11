@@ -10,7 +10,7 @@ function on() {
 
 function off() {
    document.getElementById("overlay").style.display = "none";
-   document.getElementById("refresh-button").style.display = "block";
+   document.getElementById("refresh-button").style.display = "flex";
 }
 
 function scrollBottom() {
