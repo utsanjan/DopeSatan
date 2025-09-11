@@ -254,7 +254,7 @@ svg {
 .download-content h1 {
 	color: #fff;
 	margin-bottom: 15px;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 700;
 	text-align: center;
 	letter-spacing: 1px;
@@ -291,6 +291,13 @@ svg {
 	100% {
 		left: 100%;
 	}
+}
+
+.download-icons {
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+	margin-top: 30px;
 }
 
 .download-text {
