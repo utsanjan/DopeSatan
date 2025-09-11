@@ -194,15 +194,15 @@ svg {
 	display: none !important;
 }
 
-@keyframes fadeInDown {
+@keyframes fadeInScale {
 	0% {
 		opacity: 0;
-		transform: translateY(-20px)
+		transform: scale(0.9);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateY(0)
+		transform: scale(1);
 	}
 }
 
@@ -394,6 +394,7 @@ svg {
 	background: #0D101E;
 	background-image: url("https://lh3.googleusercontent.com/-Nx39v_e2_j0/YSYPJ-f9luI/AAAAAAAAky4/ENS47JA08eIWP_XR5vgfpWVzrWEmxCdtgCLcBGAsYHQ/arlina.png");
 	position: fixed;
+	display: block;
 	margin: auto;
 	left: 0;
 	right: 0;
@@ -401,10 +402,13 @@ svg {
 	bottom: 0;
 	overflow: auto;
 	z-index: 9999999999;
-	animation: fadeInDown 1s;
+	animation: fadeInScale 1s;
 	background-repeat: no-repeat;
 	background-size: 200px auto;
 	background-position: center;
+	box-shadow: 0px 50px 65px 500px #0D101E;
+	-webkit-box-shadow: 0px 50px 65px 500px #0D101E;
+	-moz-box-shadow: 0px 50px 65px 500px #0D101E;
 }
 
 #arlinablock .inner {
