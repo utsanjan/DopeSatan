@@ -236,6 +236,71 @@ svg {
 	}
 }
 
+.download {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.download-screen {
+	background: transparent;
+	padding: 40px 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.download-content h1 {
+	color: #fff;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.progress-bar {
+	width: 320px;
+	height: 16px;
+	background: #232b3b;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 18px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	/* width of the moving bar */
+	background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
+	border-radius: 8px;
+	animation: progressLoop 1.2s linear infinite;
+}
+
+@keyframes progressLoop {
+	0% {
+		left: -40%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+.download-text {
+	color: #b0c4de;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 8px;
+	letter-spacing: 0.5px;
+}
+
 .framework {
 	top: 0;
 	left: 0;

