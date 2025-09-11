@@ -19,10 +19,27 @@
    </head>
    <body style='overflow: hidden; background:#1C2333' onload="initializePage()">
       <div class='no-items section' id='1'></div>
-      <div style='width:100%; left: 0; height:130px; pointer-events:none; background-image: linear-gradient(#0D101E,#1B2333); top:0; position:absolute; z-index:1000; border:none;'></div>
-      <div style='width:100%; left: 0; height:20px; pointer-events:none; background-image: linear-gradient(#1B2333,rgba(0, 0, 0, 0)); top:129px; position:absolute; z-index:1000; border:none;'></div>
+      <div style='width:100%; left: 0; height:130px; pointer-events:none; background-image: linear-gradient(#0D101E,#00000000); top:0; position:absolute; z-index:10000050; border:none;'></div>
+      <div style='width:100%; left: 0; height:20px; pointer-events:none; background-image: linear-gradient(#00000000,rgba(0, 0, 0, 0)); top:129px; position:absolute; z-index:1000; border:none;'></div>
       <div style='width:100%; height:30%; background:rgba(0, 0, 0, 0); margin-left:-100px; position:absolute; z-index:9'></div>
-      <button class="refresh-button" onclick="var ifr=document.getElementsByName('Right')[0]; ifr.src=ifr.src;">
+      <div id="about"><a class='button' onclick='on()'>ABOUT</a></div>
+      <div id='overlay'>
+         <div class='popup'>
+            <div class="close" onclick='off()'></div>
+            <h2 class="hero glitch layers" data-text="A B O U T">A B O U T</h2>
+            <hr/>
+            <div class='content'>
+               Tsunami Bomber is a free Android app that allows unlimited SMS and OTP flooding, exclusively for Indian mobile numbers. Experience limitless bulk texting with ease 💣<br/><br/><br>
+               ✅ ‎ ‏‏‎For optimal performance, ensure a stable network connection.<br><br>
+               ✅ ‎ ‏‏‎The application requires an active internet connection to contact the APIs.<br><br>
+               ✅ ‎ ‏‏‎This application must not be used to cause harm, discomfort, or trouble to others.<br><br>
+               ✅ ‎ ‏‏‎You will not be charged for any SMS or calls dispatched as a result of using this app.<br><br>
+               ✅ ‎ ‏‏‎By using this app, you agree that the developer is not responsible for any misuse or damage caused. Please do not use this app for revenge.<br>
+               <br/><br/>Made with ❤️ by Utsanjan Maity -aka DynaSage.
+            </div>
+         </div>
+      </div>
+      <button id="refresh-button" class="refresh-button" onclick="var ifr=document.getElementsByName('Right')[0]; ifr.src=ifr.src;">
       <i class="fa fa-refresh" aria-hidden="true"></i>
       </button>
       <iframe class="frame2" allowfullscreen='true' allowtransparency='true' frameborder='no' height='100%' id='iFrameID' name="Right" sandbox='allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals' scrolling='no' src='https://render-tau.onrender.com' width='100%'></iframe>

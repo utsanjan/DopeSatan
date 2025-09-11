@@ -8,14 +8,6 @@ function initializeApp() {
    }
 }
 
-function on() {
-   document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-   document.getElementById("overlay").style.display = "none";
-}
-
 function scrollBottom() {
    window.scrollTo(99999, 99999);
 }
