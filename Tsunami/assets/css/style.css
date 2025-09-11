@@ -277,7 +277,6 @@ svg {
 	top: 0;
 	height: 100%;
 	width: 40%;
-	/* width of the moving bar */
 	background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
 	border-radius: 8px;
 	animation: progressLoop 1.2s linear infinite;
