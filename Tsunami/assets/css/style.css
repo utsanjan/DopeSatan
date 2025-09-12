@@ -133,7 +133,7 @@ section {
 	bottom: 0;
 	overflow: auto;
 	z-index: 99999;
-	animation: fadeInScale 1s;
+	animation: fadeInScale 0.5s;
 	background-repeat: no-repeat;
 	background-size: 200px auto;
 	background-position: center;
@@ -181,7 +181,7 @@ section {
 
 .progress-bar {
 	width: 320px;
-	height: 16px;
+	height: 10px;
 	background: #232b3b;
 	border-radius: 8px;
 	overflow: hidden;
