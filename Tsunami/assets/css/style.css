@@ -206,34 +206,48 @@ svg {
 	}
 }
 
-@keyframes rubberBand {
-	from {
-		transform: scale3d(1, 1, 1)
-	}
+.framework {
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 95%;
+	display: none;
+	position: absolute;
+}
 
-	30% {
-		transform: scale3d(1.25, 0.75, 1)
-	}
+.trackframe {
+	z-index: -1;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+}
 
-	40% {
-		transform: scale3d(0.75, 1.25, 1)
-	}
+#arlinablock {
+	background: #0D101E;
+	background-image: url("https://lh3.googleusercontent.com/-Nx39v_e2_j0/YSYPJ-f9luI/AAAAAAAAky4/ENS47JA08eIWP_XR5vgfpWVzrWEmxCdtgCLcBGAsYHQ/arlina.png");
+	margin-top: -50px;
+	position: fixed;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	z-index: 99999;
+	animation: fadeInScale 1s;
+	background-repeat: no-repeat;
+	background-size: 200px auto;
+	background-position: center;
+	box-shadow: 0px 50px 65px 500px #0D101E;
+	-webkit-box-shadow: 0px 50px 65px 500px #0D101E;
+	-moz-box-shadow: 0px 50px 65px 500px #0D101E;
+}
 
-	50% {
-		transform: scale3d(1.15, 0.85, 1)
-	}
-
-	65% {
-		transform: scale3d(.95, 1.05, 1)
-	}
-
-	75% {
-		transform: scale3d(1.05, .95, 1)
-	}
-
-	to {
-		transform: scale3d(1, 1, 1)
-	}
+#arlinablock .header,
+.inner,
+.fixblock {
+	display: none
 }
 
 .download {
@@ -326,182 +340,4 @@ svg {
 	text-align: center;
 	margin-top: 8px;
 	letter-spacing: 0.5px;
-}
-
-.framework {
-	top: 0;
-	left: 0;
-	z-index: 5;
-	width: 100%;
-	height: 95%;
-	display: none;
-	position: absolute;
-}
-
-.trackframe {
-	z-index: -1;
-	opacity: 0;
-	width: 0px;
-	height: 0px;
-}
-
-.Arpian-ads {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 90px;
-	padding: 0;
-	box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .1);
-	-webkit-transition: all .1s ease-in;
-	transition: all .1s ease-in;
-	align-items: center;
-	justify-content: center;
-	background-color: #fefefe;
-	z-index: 20;
-}
-
-.Arpian-ads-close {
-	right: 0;
-	top: -25px;
-	width: 30px;
-	height: 30px;
-	display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	border-radius: 12px 0 0;
-	background-color: #fefefe;
-	box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .08);
-}
-
-.Arpian-ads .Arpian-ads-close svg {
-	width: 22px;
-	height: 22px;
-	fill: #000;
-}
-
-.Arpian-ads .Arpian-ads-content {
-	pointer-events: none;
-	overflow: hidden;
-	display: block;
-	position: relative;
-	text-align: center;
-	margin-top: 0px;
-	height: 90px;
-	width: 100%;
-}
-
-#arlinablock .header {
-	margin: 0 0 15px 0;
-	display: none
-}
-
-#arlinablock {
-	background: #0D101E;
-	background-image: url("https://lh3.googleusercontent.com/-Nx39v_e2_j0/YSYPJ-f9luI/AAAAAAAAky4/ENS47JA08eIWP_XR5vgfpWVzrWEmxCdtgCLcBGAsYHQ/arlina.png");
-	margin-top: -50px;
-	position: fixed;
-	display: block;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	overflow: auto;
-	z-index: 99999;
-	animation: fadeInScale 1s;
-	background-repeat: no-repeat;
-	background-size: 200px auto;
-	background-position: center;
-	box-shadow: 0px 50px 65px 500px #0D101E;
-	-webkit-box-shadow: 0px 50px 65px 500px #0D101E;
-	-moz-box-shadow: 0px 50px 65px 500px #0D101E;
-}
-
-#arlinablock .inner {
-	background: #EEEEEE;
-	color: #48525C;
-	display: none;
-	text-align: center;
-	width: 600px;
-	padding: 40px;
-	border-radius: 15px;
-	margin: 7% auto 2% auto;
-	animation: rubberBand 1s;
-	font-weight: bold
-}
-
-#arlinablock button {
-	padding: 10px 20px;
-	border: 0;
-	background: rgba(0, 0, 0, 0.15);
-	color: #fff;
-	border-radius: 7px;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 20px;
-	cursor: pointer;
-	transition: all .3s;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
-}
-
-#arlinablock button:hover {
-	background: rgba(0, 0, 0, 0.35);
-	color: #fff;
-	outline: none;
-	border-radius: 7px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
-}
-
-#arlinablock button.active,
-#arlinablock button:hover.active {
-	background: #FFF;
-	color: #FFF;
-	outline: none;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-	border-radius: 7px
-}
-
-#arlinablock .fixblock {
-	background: #fff;
-	text-align: left;
-	color: #48525C;
-	padding: 20px;
-	height: 300px;
-	overflow: auto;
-	line-height: 30px;
-	border-radius: 10px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
-}
-
-#arlinablock .fixblock div {
-	display: none
-}
-
-#arlinablock ol {
-	margin-left: 20px
-}
-
-#arlinablock .fixblock div.active {
-	display: block
-}
-
-@media(max-width:768px) {
-	#arlinablock .inner {
-		width: calc(100% - 20px);
-		margin: 10px auto;
-		padding: 15px
-	}
-}
-
-.button {
-	font-size: 1em;
-	padding: 10px;
-	color: #fff;
-	border: 2px solid #4278E3;
-	border-radius: 20px/50px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
 }

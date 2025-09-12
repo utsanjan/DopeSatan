@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
 
 function initializeApp() {
    const isInWebView = navigator.userAgent.includes('wv');
-   if (!isInWebView) {
+   if (isInWebView) {
       window.location = "https://cutt.ly/srF06bOM";
       document.getElementById("overlap").style.display = "none";
    } else {
