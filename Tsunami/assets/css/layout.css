@@ -350,7 +350,7 @@ section {
 .interstitial-ads-close {
 	width: 25px;
 	height: 25px;
-	position: relative;
+	position: absolute;
 	top: 0;
 	right: 0;
 	display: flex;
