@@ -324,7 +324,7 @@ section {
 	transition: opacity 0.2s;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	background-image: linear-gradient(#0D101ECC, #1C2333CC);
+	background-image: linear-gradient(#0D101ECC, #1C233380);
 }
 
 .interstitial-ads.hidden {
