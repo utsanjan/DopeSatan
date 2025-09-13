@@ -350,7 +350,7 @@ section {
 .interstitial-ads-close {
 	width: 25px;
 	height: 25px;
-	position: absolute;
+	position: relative;
 	top: 0;
 	right: 0;
 	display: flex;
@@ -359,7 +359,7 @@ section {
 	border-radius: 0 15px 0 15px;
 	background-color: #fefefe;
 	box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.15);
-	z-index: 2;
+	z-index: 2147483647;
 	padding: 0;
 	margin: 0;
 }
