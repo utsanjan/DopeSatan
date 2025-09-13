@@ -235,41 +235,31 @@ section {
 }
 
 .popup .close {
+	width: 25px;
+	height: 25px;
 	position: absolute;
-	top: -12px;
-	right: -12px;
-	width: 30px;
-	height: 30px;
-	background: #8f9199;
-	border-radius: 50%;
-	cursor: pointer;
+	top: 0;
+	right: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 20px;
-	color: #2a344a;
+	border-radius: 0 15px 0 15px;
+	background: #8f9199;
+	color: #0D101E;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	padding: 0;
+	margin: 0;
 }
 
 .popup .close:hover {
 	background: #e3e5ec;
 }
 
-.popup .close::before,
-.popup .close::after {
-	content: '';
-	position: absolute;
-	width: 15px;
-	height: 2px;
-	background: #2a344a;
-}
-
-.popup .close::before {
-	transform: rotate(45deg);
-}
-
-.popup .close::after {
-	transform: rotate(-45deg);
+.popup .close svg {
+	width: 18px;
+	height: 18px;
+	fill: #0D101E;
 }
 
 .popup h2 {
@@ -318,6 +308,77 @@ section {
 	font-weight: bold;
 	font-size: medium;
 	transition: all 0.2s ease;
+}
+
+.interstitial-ads {
+	top: 0;
+	left: 0;
+	opacity: 1;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	background-image: linear-gradient(#0D101ECC, #1C2333CC);
+}
+
+.interstitial-ads.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.interstitial-ads-content {
+	background: #8f9199;
+	border-radius: 15px;
+	box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+	width: 160px;
+	height: 300px;
+	padding: 32px 24px 24px 24px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+.interstitial-ads-close {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 15px 0 15px;
+	background-color: #fefefe;
+	box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.15);
+	z-index: 2;
+	padding: 0;
+	margin: 0;
+}
+
+.interstitial-ads-close:hover {
+	background: #e3e5ec;
+}
+
+.interstitial-ads-close svg {
+	width: 18px;
+	height: 18px;
+	fill: #2a344a;
+}
+
+@media (max-width: 600px) {
+	.interstitial-ads-content {
+		max-width: 98vw;
+		padding: 18px 6vw 18px 6vw;
+	}
 }
 
 .sticky-ads {
