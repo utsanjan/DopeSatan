@@ -39,7 +39,6 @@ section {
 	width: 50px;
 	height: 50px;
 	z-index: 10000;
-	margin-top: -50px;
 	position: absolute;
 	border: 5px solid #fafafada;
 	border-bottom-color: #4478e3;
@@ -152,26 +151,32 @@ section {
 }
 
 .button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	border-radius: 8px;
-	width: 70px;
-	height: 20px;
-	border: none;
-	top: 0px;
-	left: 0px;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	background: #4278E3;
-	color: white;
-	position: absolute;
-	z-index: 10000060;
-	text-align: center;
-	font-weight: bold;
-	font-size: medium;
-	transition: all 0.2s ease;
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		border-radius: 8px;
+		width: 70px;
+		height: 20px;
+		border: none;
+		top: 0px;
+		left: 0px;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		background: #4278E3;
+		color: white;
+		position: absolute;
+		z-index: 10000060;
+		text-align: center;
+		font-weight: bold;
+		font-size: medium;
+		transition: all 0.2s ease;
+	}
 }
 
 .download {
@@ -270,7 +275,7 @@ footer {
 	width: 110%;
 	max-height: 150px;
 	margin-left: -10px;
-	z-index: 10000090;
+	z-index: 10000070;
 	bottom: -5px;
 	position: fixed;
 }
