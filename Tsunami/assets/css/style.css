@@ -28,7 +28,7 @@ section {
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 10000080;
+	z-index: 10000070;
 	background-image: linear-gradient(#0D101E, #1C2333);
 	display: flex;
 	align-items: center;
@@ -46,6 +46,12 @@ section {
 	display: block;
 	box-sizing: border-box;
 	animation: rotation 1s linear infinite;
+}
+
+@media only screen and (max-width: 768px) {
+	#circle {
+		margin-top: -50px;
+	}
 }
 
 @keyframes rotation {
@@ -272,12 +278,19 @@ section {
 }
 
 footer {
-	width: 110%;
-	max-height: 150px;
-	margin-left: -10px;
-	z-index: 10000070;
-	bottom: -5px;
-	position: fixed;
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	footer {
+		display: block;
+		width: 110%;
+		max-height: 150px;
+		margin-left: -10px;
+		z-index: 10000080;
+		bottom: -5px;
+		position: fixed;
+	}
 }
 
 footer div {
