@@ -342,17 +342,17 @@ section {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	overflow: auto;
+	align-items: stretch;
+	justify-content: stretch;
+	overflow: hidden;
 }
 
 .interstitial-ads-close {
 	width: 25px;
 	height: 25px;
-	position: absolute;
-	top: 0;
-	right: 0;
+	position: fixed;
+	top: calc(50% - 137.5px);
+	left: calc(50% + 67.5px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -362,6 +362,7 @@ section {
 	z-index: 2147483647;
 	padding: 0;
 	margin: 0;
+	transform: translate(-50%, -50%);
 }
 
 .interstitial-ads-close:hover {
@@ -372,13 +373,6 @@ section {
 	width: 18px;
 	height: 18px;
 	fill: #2a344a;
-}
-
-@media (max-width: 600px) {
-	.interstitial-ads-content {
-		max-width: 98vw;
-		padding: 18px 6vw 18px 6vw;
-	}
 }
 
 .sticky-ads {
