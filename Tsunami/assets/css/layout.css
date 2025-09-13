@@ -353,6 +353,7 @@ section {
 	position: fixed;
 	top: calc(50% - 137.5px);
 	left: calc(50% + 67.5px);
+	font-size: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -370,6 +371,7 @@ section {
 }
 
 .interstitial-ads-close svg {
+	display: none;
 	width: 18px;
 	height: 18px;
 	fill: #2a344a;

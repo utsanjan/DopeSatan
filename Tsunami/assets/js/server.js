@@ -3,14 +3,47 @@ function initializePage() {
    else window.location = "../../index.html";
 }
 
+function fadeIn(element, display = "block") {
+   element.style.opacity = 0;
+   element.style.display = display;
+   let last = +new Date();
+   const tick = function () {
+      element.style.opacity = +element.style.opacity + (new Date() - last) / 200;
+      last = +new Date();
+      if (+element.style.opacity < 1) {
+         requestAnimationFrame(tick);
+      } else {
+         element.style.opacity = 1;
+      }
+   };
+   tick();
+}
+
+function fadeOut(element, callback) {
+   element.style.opacity = 1;
+   let last = +new Date();
+   const tick = function () {
+      element.style.opacity = +element.style.opacity - (new Date() - last) / 200;
+      last = +new Date();
+      if (+element.style.opacity > 0) {
+         requestAnimationFrame(tick);
+      } else {
+         element.style.opacity = 0;
+         element.style.display = "none";
+         if (callback) callback();
+      }
+   };
+   tick();
+}
+
 function on() {
-   document.getElementById("overlay").style.display = "block";
-   document.getElementById("refresh-button").style.display = "none";
+   fadeIn(document.getElementById("overlay"), "block");
+   fadeOut(document.getElementById("refresh-button"));
 }
 
 function off() {
-   document.getElementById("overlay").style.display = "none";
-   document.getElementById("refresh-button").style.display = "flex";
+   fadeOut(document.getElementById("overlay"));
+   fadeIn(document.getElementById("refresh-button"), "flex");
 }
 
 function scrollBottom() {
