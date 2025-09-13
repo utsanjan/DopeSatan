@@ -336,8 +336,8 @@ section {
 	background: #8f9199;
 	border-radius: 15px;
 	box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
-	width: 160px;
-	height: 300px;
+	width: 300px;
+	height: 250px;
 	padding: 0;
 	position: relative;
 	display: flex;
@@ -351,8 +351,8 @@ section {
 	width: 25px;
 	height: 25px;
 	position: fixed;
-	top: calc(50% - 137.5px);
-	left: calc(50% + 67.5px);
+	top: calc(50% - 112.5px);
+	left: calc(50% + 137.5px);
 	font-size: 10px;
 	display: flex;
 	align-items: center;
