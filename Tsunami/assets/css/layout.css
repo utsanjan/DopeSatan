@@ -353,6 +353,7 @@ section {
 	position: fixed;
 	top: calc(50% - 112.5px);
 	left: calc(50% + 137.5px);
+	font-weight: 500;
 	font-size: 10px;
 	display: flex;
 	align-items: center;
