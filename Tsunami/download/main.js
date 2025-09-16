@@ -14,10 +14,6 @@ window.addEventListener("load", function () {
    }, 0);
 });
 
-function downloadJSAtOnload() {
-   var e = document.createElement("script");
-   e.src = "https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js", document.body.appendChild(e)
-}
 window.addEventListener ? window.addEventListener("load", downloadJSAtOnload, !1) : window.attachEvent ? window.attachEvent("onload", downloadJSAtOnload) : window.onload = downloadJSAtOnload;
 
 window['__wavt'] = 'AOuZoY47VO9Uam26XibQb5GnmKa0CwaFjg:1682224959445';
