@@ -14,17 +14,6 @@ window.addEventListener("load", function () {
    }, 0);
 });
 
-function initializeApp() {
-   const isInWebView = navigator.userAgent.includes('wv');
-   if (!isInWebView) {
-      window.location = "./download";
-      document.getElementById("overlap").style.display = "none";
-   } else {
-      document.getElementById("framework").style.display = 'block';
-      document.getElementById("download").style.display = "none";
-   }
-}
-
 function downloadJSAtOnload() {
    var e = document.createElement("script");
    e.src = "https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js", document.body.appendChild(e)

