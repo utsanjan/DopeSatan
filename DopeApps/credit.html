@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Built with love by Utsanjan Maity</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      scrollbar-width: none;
+      background: #0d1117;
+      color: #92a1b5;
+      font-family: "Google Sans Flex", "Segoe UI", sans-serif;
+      font-size: 12.5px;
+      letter-spacing: .02em;
+      text-align: center;
+    }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    .credit {
+      margin: 0;
+      padding: 14px 8px 0;
+      border-top: 1px solid #26333f;
+      line-height: 1.5;
+    }
+    .credit strong {
+      color: #dde4ee;
+      font-weight: 600;
+    }
+    .heart {
+      color: #f87171;
+      font-size: 15px;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: -2px;
+    }
+  </style>
+</head>
+<body>
+  <p class="credit">
+    Built with <span class="heart" aria-hidden="true">❤</span> by <strong>Utsanjan Maity</strong>
+  </p>
+  <script>
+    (function () {
+      var frame = window.frameElement;
+      if (!frame) return;
+      frame.setAttribute("scrolling", "no");
+      frame.style.overflow = "hidden";
+    })();
+  </script>
+</body>
+</html>
